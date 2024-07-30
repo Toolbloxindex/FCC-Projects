@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html lang ="en">
+<head>
+  <title>Coffee Survey</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css"
+</head>
+<body>
+  <main>
+    <div class="Survey">
+      <h1 id="title">Ron's  Coffee Shop Survey</h1>
+      <p id="description">Thanks for choosing us, answer this survey to get a free expresso. Please be honest, this helps us improve your experience!</p>
+      <form id="survey-form" method="post" action=''>
+        
+        <fieldset>
+          <label class ="spacingnumber"for="number" id="number-label"> Type the first number of your receipt
+            <input placeholder="1234" required id="number" type="number" name="verification" min="1000" max="9999">
+          </label>
+        </fieldset>
+        <fieldset>
+          <label class="scale" for="name" id="name-label">What's your name?<input placeholder=" enter name here" type="text" name="personal-info" id="name" name="personal-info" required/></label>
+          <label class="scale" for="email" id="email-label">What's your email? <input placeholder=" enter email here" type="email" id="email" name="personal-info" required/></label>
+          
+          <label for="age"> What's your age?
+            <select id="age" required name="personal-info">
+              <option value="">Select</option>
+              <option value="1">13-17</option>
+              <option value="2">18-24</option>
+              <option value ="3">25-60</option>
+              <option value="4">+60</option>
+            </select> 
+          </label>
+        </fieldset>
+        
+        <fieldset>
+
+          <label for="dropdown">How often do you visit our coffee shop?
+            <select required id="dropdown" name="visit-info">
+              <option value="">Select</option>
+              <option value="1">Daily</option>
+              <option value="2">Weekly</option>
+              <option value="3">Monthly</option>
+              <option value="4">Rarely</option>
+            </select>  
+          </label>
+          <label for="time">When did you visit our shop?
+            <select required id="time" name="visit-info">
+              <option value="">Select</option>
+              <option value="1">Morning</option>
+              <option value="2">Afternoon</option>
+              <option value="3">Evening</option>
+            </select>  
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend> How would you rate the quality of our coffee? </legend>
+          <div class="radiogroup">
+            <label for="poor-quality" class="radio"><input type="radio" name="coffee-quality" id="poor-quality" value="poor"> Poor</label>
+            <label for="average-quality" class="radio"><input type="radio" name="coffee-quality" id="average-quality" value="average"> Average</label>
+            <label for="good-quality" class="radio"><input type="radio" name="coffee-quality" id="good-quality" checked value="good"> Good</label>
+            <label for="excellent-quality" class="radio"><input type="radio" name="coffee-quality" id="excellent-quality" value="excellent"> Excellent</label>
+          </div> 
+        </fieldset>
+              <fieldset>
+          <legend> How would you rate the friendliness of our staff? </legend>
+          <div class="radiogroup">
+            <label for="poor-staff" class="radio"><input type="radio" name="staff-quality" id="poor-staff" value="poor"> Poor</label>
+            <label for="average-staff" class="radio"><input type="radio" name="staff-quality" id="average-staff" value="average"> Average</label>
+            <label for="good-staff" class="radio"><input checked type="radio" name="staff-quality" id="good-staff" value="good"> Good</label>
+            <label for="excellent-staff" class="radio"><input type="radio" name="staff-quality" id="excellent-staff" value="excellent"> Excellent</label>
+          </div> 
+        </fieldset>
+        <fieldset class="checkbox">
+          <legend> Choose words to describe our shop </legend>
+          <label for="creative"> <input type="checkbox" name="shop-personality" id="creative" value="creative"> Creative</label>
+          <label for="cozy"> <input id="cozy" value="cozy" type="checkbox" name="shop-personality"> Cozy</label>
+          <label for="modern"> <input id="modern" value="modern" type="checkbox" name="shop-personality" > Modern</label>
+          <label for="spacious"> <input id="spacious" value="spacious"type="checkbox" name="shop-personality"> Spacious</label>
+          <label for="clean"> <input id="clean"type="checkbox" name="shop-personality" value="clean"> Clean</label>
+        </fieldset>
+        <fieldset>
+          <label> Lastly, tell us how we can improve your experience
+            <textarea cols="60" rows="3" placeholder="turn up the AC..."></textarea>  
+          </label>
+        </fieldset>
+        <input type="submit" value="Submit" id="submit">
+      </form>
+    </div>
+    <div class="legroom"></div>
+  </main>
+</body>
