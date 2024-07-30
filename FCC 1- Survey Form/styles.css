@@ -1,0 +1,118 @@
+h1, p {
+    text-align: center;
+  }
+  
+  
+  
+  body {
+    width: 100%;
+    height: 100vh;
+    background-color: #EAD1AF;
+    font-family: verdana;
+    color: #FFF3E5;
+    padding: 2rem 0px;
+    margin: 0;
+    font-size: 1.2em;
+  }
+  
+  .Survey {
+    width: 60vw;
+    max-width: 800px;
+    min-width: 500px;
+    background-color:#CE9B58;
+    margin: 0px auto;
+    padding: 0.8em;
+    border-radius: 20px;
+  }
+  
+  input, select {
+    display:block;
+    border:none;
+    
+  }
+  
+  .checkbox input {
+    display:inline;
+    transform: scale(1.3);
+  }
+  .checkbox label {
+    font-size: 0.9em;
+    display:block;
+  }
+  
+  select, textarea {
+    width: 100%;
+    min-height: 3rem;
+    border:none;
+    font-size: 0.85em;
+  }
+  
+  .scale input {
+    width: 100%;
+    min-height: 3rem;
+    border: none;
+    font-size: 0.85em;
+  }
+  
+  
+  
+  input[type="radio"] {
+    display: inline;
+    vertical-align:middle;
+  }
+  
+  input[type="number"] {
+    height: 2rem;
+  }
+  
+  .radio {
+    font-size:1.1em;
+  }
+  
+  .radiogroup {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    border:none;
+  }
+  
+  textarea {
+    display:block;
+    margin-top: 1rem;
+    font-family: verdana;
+  }
+  
+  fieldset {
+     margin: 2rem auto;
+     border: none;
+     
+  }
+  
+  
+  input, select {
+    margin: 1em 0px;
+  }
+  
+  input[type="submit"] {
+    border:none;
+    width:60%;
+    height: 2rem;
+    margin: 0 auto;
+    font-family: verdana;
+  }
+  
+  .legroom {
+    width: 100%;
+    height:2rem;
+  }
+  
+  input[type="submit"]:hover {
+    cursor:pointer;
+    background-color: #EAD1AF
+  }
+  
+  input[type="submit"]:active {
+    background-color: #A8A8A8;
+    color: white;
+  }
+  
