@@ -71,7 +71,9 @@
   }
   
   .timeline {
-    height: 200px;
-    width: 100%;
-    background-color: grey;
+    height: 400px;
+    width: 80%;
+    background-color:#EAEAEA;
+    border-radius: 30px;
+    margin: 0 auto;
   }
