@@ -1,4 +1,11 @@
-* {
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  }
+  
+  
+  * {
     font-family: Poppins, verdana;
   }
   
@@ -76,4 +83,26 @@
     background-color:#EAEAEA;
     border-radius: 30px;
     margin: 0 auto;
+  }
+  
+  .inline {
+    display: inline;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-inline-start: 0;
+    margin-block: 0;
+  }
+  
+  nav h3 a  {
+    
+      border-radius:6px;
+      color: black;
+      padding: 4px;
+      text-decoration: none;
+      background-color: #EAEAEA;
   }
