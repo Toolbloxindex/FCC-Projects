@@ -47,13 +47,17 @@
   }
   
   figure {
-    aspect-ratio: 1 / 1;
     width: 600px;
-    height: 600px;
-    display: flex;
+    margin: 0 auto;
+    text-align: center; 
+  }
+  img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
     margin: 0 auto;
   }
-  
   .block {
     display: block;
   }
@@ -99,7 +103,7 @@
     align-items: center;
     padding-inline-start: 0;
     margin-block: 0;
-    max-width: 400px;
+    max-width: 500px;
     margin: 0 auto;
   }
   
@@ -116,4 +120,14 @@
 .legroom {
   height: 40px;
   width:100%
+}
+
+figcaption {
+  margin-top: 10px;
+  display: block;
+  text-align: center; 
+  white-space: normal; 
+  font-weight: 500;
+  font-size: 0.8em;
+  color:lightgrey;
 }
