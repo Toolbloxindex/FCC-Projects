@@ -8,11 +8,22 @@
     margin: 0;
     display: flex;
     justify-content: center;
+    box-sizing: border-box;
+    padding: 0 50px;
+  }
+  
+  main {
+    width: 60vw;
+    max-width: 700px;
+    min-width: 600px;
+    padding: 20px;
+    height: 100vh;
   }
   .header-text {
     padding: 0;
-    margin: 40px 0 -20px -20px;
+    margin: 0 0 -20px 0;
     color: grey;
+    text-align: center;
   }
   .header {
     padding:0;
@@ -24,6 +35,43 @@
     font-size: 5rem;
     padding: 0;
     margin: 0;
+    text-align: center;
   }
   
+  figure {
+    aspect-ratio: 25 / 14;
+    width: 520px;
+    height: 291px;
+    display: flex;
+    margin: 0 auto;
+  }
   
+  .block {
+    display: block;
+  }
+  
+  .center {
+    text-align: center;
+  }
+  
+  .description {
+    color: grey;
+  
+  }
+  
+  .divider {
+    width: 200px;
+    height: 3px;
+    background-color:#4F4B47;
+    margin: 2em auto;
+  }
+  
+  h2 {
+    font-size: 2em;
+  }
+  
+  .timeline {
+    height: 200px;
+    width: 100%;
+    background-color: grey;
+  }
