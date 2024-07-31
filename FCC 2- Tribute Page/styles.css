@@ -79,12 +79,13 @@
   }
   
   .timeline {
-    height: 1370px;
+    height: auto;
     width: 80%;
     background-color:#EAEAEA;
     border-radius: 30px;
     margin: 0 auto;
     padding: 5px 30px;
+    box-shadow: 1px 2px 8px 0 #CCCCCC ;
   }
   
   .inline {
@@ -111,3 +112,8 @@
       background-color:#C1C1C1;
       box-shadow: 1px 2px 9px 0 #CCCCCC ;
   }
+
+.legroom {
+  height: 40px;
+  width:100%
+}
