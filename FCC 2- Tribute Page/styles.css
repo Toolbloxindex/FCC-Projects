@@ -79,11 +79,12 @@
   }
   
   .timeline {
-    height: 400px;
+    height: 1370px;
     width: 80%;
     background-color:#EAEAEA;
     border-radius: 30px;
     margin: 0 auto;
+    padding: 5px 30px;
   }
   
   .inline {
