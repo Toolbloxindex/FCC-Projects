@@ -131,3 +131,7 @@ figcaption {
   font-size: 0.8em;
   color:lightgrey;
 }
+
+.underline {
+    text-decoration:underline;
+}
