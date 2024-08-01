@@ -108,21 +108,20 @@
   }
   
   nav h3 a  {
-    
-      border-radius:6px;
-      color: white;
-      padding: 4px 10px;
-      text-decoration: none;
-      background-color:#C1C1C1;
-      box-shadow: 1px 2px 9px 0 #CCCCCC ;
+    border-radius:6px;
+    color: white;
+    padding: 4px 10px;
+    text-decoration: none;
+    background-color:#C1C1C1;
+    box-shadow: 1px 2px 9px 0 #CCCCCC ;
   }
 
 .legroom {
-  height: 40px;
+  height: 10px;
   width:100%
 }
 
-figcaption {
+.small-text {
   margin-top: 10px;
   display: block;
   text-align: center; 
@@ -134,4 +133,9 @@ figcaption {
 
 .underline {
     text-decoration:underline;
+}
+
+.learn-more {
+    max-width: unset;
+    max-width: 300px;
 }
