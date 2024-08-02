@@ -25,18 +25,12 @@
     max-width: 1000px;
     min-width: 600px;
     padding: 20px;
-    height: 100vh;
   }
   .header-text {
     padding: 0;
-    margin: 0 0 -20px 0;
+    margin: 50px 0 -20px 0;
     color: grey;
     text-align: center;
-  }
-  .header {
-    padding:0;
-    margin:0;
-    
   }
   h1 {
     font-weight:500;
@@ -138,4 +132,12 @@
 .learn-more {
     max-width: unset;
     max-width: 300px;
+}
+
+header {
+    width: 80%;
+    max-width: 600px;
+    height: 50px;
+    background-color: #C1C1C1;
+    border-radius: 24px;
 }
