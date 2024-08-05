@@ -26,17 +26,25 @@ header {
     margin: 0 auto;
     flex-wrap: wrap;
     width: 100%;
-    max-width: 700px;
+    max-width: 800px;
     min-width: 600px;
 }
 
-header p {
+header p:not(.button), header a {
     text-align: center;
     padding: 6px 13px;
-    color: E8E8EA;
+    color: blac;
     background-color: #EFEFF2;
     box-shadow: 0px 0px 9px 0 #CCCCCC;
     border-radius: 25px;
     font-weight: 600;
     font-size: 1.1rem;
+}
+
+.header-divider {
+    width: 20px; 
+    height: 10px;
+    background-color: #DBDBDB;
+    box-shadow: 0px 0px 6px 0 #CCCCCC;
+    border-radius: 25px;
 }
