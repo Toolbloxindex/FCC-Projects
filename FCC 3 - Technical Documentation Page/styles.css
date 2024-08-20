@@ -1,0 +1,17 @@
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  }
+  
+  * {
+    font-family: Poppins, Sans Serif;
+  }
+  
+  .nav-bar {
+    position: fixed;
+  }
+  
+  ul {
+    list-style: none;
+  }
