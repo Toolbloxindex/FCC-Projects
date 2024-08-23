@@ -62,7 +62,7 @@ html, body {
     }
 }
 
-@media (max-width: 1400px) and (min-width: 800px) {
+@media (max-width: 1400px) and (min-width: 700px) {
   .header-text{
     font-size: 4rem;
   }
