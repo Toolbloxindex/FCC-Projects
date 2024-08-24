@@ -1,47 +1,47 @@
 @media (prefers-reduced-motion: no-preference) {
-    * {
-      scroll-behavior: smooth;
-    }
-  }
-  
   * {
-    font-family: D-DIN-BOLD, Poppins, arial;       
+    scroll-behavior: smooth;
   }
-  
-  .nav-bar {
-    position: fixed;
-  }
-  
-  ul {
-    list-style: none;
-  }
+}
+
+* {
+  font-family: D-DIN-BOLD, Poppins, Arial;       
+}
+
+.nav-bar {
+  position: fixed;
+}
+
+ul {
+  list-style: none;
+}
 
 html, body {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    background-color: #050304;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #050304;
 }
 
 .image-container {
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    padding:0;
-    margin:0;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 0;
+  margin: 0;
 }
 
 .image-container img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    height: 100%;
-    width: auto;
-    transform: translate(-50%, -50%);
-    min-width: 100%;
-    min-height: 100%;
-    object-fit: cover; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  width: auto;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover; 
 }
 
 .header-text {
@@ -92,18 +92,20 @@ html, body {
       top: calc(1% + 4rem + 3rem);
   }
 }
+
 nav {
   width: 100%;
   background-color: #0F0F0F;
   height: 100vh;
 }
+
 nav img {
   position: relative;
   width: 250px;
   height: auto;
   top: 15%;
   left: 26%;
-  transform:translateX(-50%);
+  transform: translateX(-50%);
 }
 
 ul {
@@ -114,15 +116,47 @@ ul {
   align-items: center;
   top: -50%;
   left: 50%;
-  transform: translatex(-48%);
+  transform: translateX(-48%);
 }
 
 li a {
-  padding: 10px 5px;
-  background-color: #232323;
+  padding: 10px 20px;
+  background-color: #1E1E1E;
   font-size: 1.3rem;
   text-decoration: none;
   color: white;
   font-weight: bold;
-  border-radius: 20%/20px 0 0 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px 0 20px 0;
+  border: 3px solid #565656;
+  /*box-shadow: 0 0 2px 0px #fff;*/
+}
+
+li a:before,
+li a:after {
+  content: '';
+  position: absolute;
+  background-color: #0F0F0F; 
+  z-index: 2000;
+}
+
+li a:before {
+  top: -3px;
+  left: -3px;
+  width: 23px;
+  height: 23px;
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+li a:after {
+  bottom: -3px;
+  right: -3px;
+  width: 23px;
+  height: 23px;
+  clip-path: polygon(100% 100%, 0 100%, 100% 0);
+}
+
+li a:hover {
+  background-color: #555555;
 }
