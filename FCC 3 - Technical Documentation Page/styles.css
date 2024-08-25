@@ -94,29 +94,30 @@ html, body {
 }
 
 nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   background-color: #0F0F0F;
   height: 100vh;
 }
 
 nav img {
-  position: relative;
   width: 250px;
   height: auto;
-  top: 15%;
-  left: 26%;
-  transform: translateX(-50%);
+  margin: -55px; 
 }
 
 ul {
-  position: relative;
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 45px;
+  gap: 70px;
   align-items: center;
-  top: -50%;
-  left: 50%;
-  transform: translateX(-48%);
+  white-space: nowrap;
 }
 
 li a {
@@ -129,8 +130,7 @@ li a {
   position: relative;
   overflow: hidden;
   border-radius: 20px 0 20px 0;
-  border: 3px solid #565656;
-  /*box-shadow: 0 0 2px 0px #fff;*/
+  border: 2px solid #565656;
 }
 
 li a:before,
@@ -142,18 +142,18 @@ li a:after {
 }
 
 li a:before {
-  top: -3px;
-  left: -3px;
-  width: 23px;
-  height: 23px;
+  top: -5px;
+  left: -5px;
+  width: 25px;
+  height: 25px;
   clip-path: polygon(0 0, 100% 0, 0 100%);
 }
 
 li a:after {
-  bottom: -3px;
-  right: -3px;
-  width: 23px;
-  height: 23px;
+  bottom: -5px;
+  right: -5px;
+  width: 25px;
+  height: 25px;
   clip-path: polygon(100% 100%, 0 100%, 100% 0);
 }
 
