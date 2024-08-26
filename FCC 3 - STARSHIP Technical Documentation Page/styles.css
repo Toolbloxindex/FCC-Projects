@@ -138,9 +138,18 @@ li a:active {
 }
 
 .main-section {
-  height: 100vh;
+  height: 100vh; /*temporary*/
   width: 100%;
 }
+/* universal stuff*/
+
+.giant-bold {
+  font-size: 4rem;
+  font-weight: bolder;
+  text-align: left;
+}
+
+/*MISSION SECTION*/
 
 #mission {
   background-color: #141414;
@@ -190,12 +199,6 @@ li a:active {
   margin-top: 20px;
 }
 
-
-.mission-container h2 {
-  font-size: 4rem;
-  font-weight: bolder;
-  text-align: center;
-}
 
 .bold {
   font-weight: bold;
@@ -265,6 +268,27 @@ li a:active {
   background-color: #555555;
 }
 }
+/*STARSHIP SECTION*/
+
+
+#starship {
+  background-color:#0F0F0F;
+  height: auto; 
+  width: 100%;
+}
+.starship-container {
+  width: 70vw;
+  max-width: 900px;
+  min-width: 200px;
+  margin: 0 auto;
+  color: #fff;
+  padding-bottom: 10px;
+  padding: 1%;
+}
+
+
+
+
 
 @media (max-width: 1400px) and (min-width: 600px) {
   .header-text {
