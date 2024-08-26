@@ -146,7 +146,7 @@ li a:active {
 .giant-bold {
   font-size: 4rem;
   font-weight: bolder;
-  text-align: left;
+  text-align: center;
 }
 
 /*MISSION SECTION*/
@@ -154,6 +154,7 @@ li a:active {
 #mission {
   background-color: #141414;
   height: auto;
+  padding: 50px 0;
 }
 
 .mission-container {
@@ -162,7 +163,6 @@ li a:active {
   min-width: 200px;
   margin: 0 auto;
   color: #fff;
-  padding-bottom: 10px;
   padding: 1%;
 }
 
@@ -218,6 +218,35 @@ li a:active {
 .capabilities p span {
   color:white;
 }
+
+/*STARSHIP SECTION*/
+
+
+#starship {
+  background-color:#0F0F0F;
+  height: auto; 
+  width: 100%;
+}
+.starship-container {
+  width: 70vw;
+  max-width: 900px;
+  min-width: 200px;
+  margin: 0 auto;
+  color: #fff;
+  padding-bottom: 10px;
+  padding: 1%;
+}
+
+.starship-container img {
+  width: 200px;
+  height: auto;
+}
+
+.starship-container p {
+  text-align: center;
+  font-size: 1.1rem;
+}
+
 @media (min-width: 1400px) {
   .header-text {
       top: unset;
@@ -264,31 +293,18 @@ li a:active {
   .mission-container p {
     font-size: 1.4rem;
   }
+  .giant-bold {
+    font-size: 5rem;
+    text-align: left;
+  }
   li a:hover {
   background-color: #555555;
+  }
+  .starship-container img {
+    width: 300px;
+    height: auto;
+  }
 }
-}
-/*STARSHIP SECTION*/
-
-
-#starship {
-  background-color:#0F0F0F;
-  height: auto; 
-  width: 100%;
-}
-.starship-container {
-  width: 70vw;
-  max-width: 900px;
-  min-width: 200px;
-  margin: 0 auto;
-  color: #fff;
-  padding-bottom: 10px;
-  padding: 1%;
-}
-
-
-
-
 
 @media (max-width: 1400px) and (min-width: 600px) {
   .header-text {
@@ -330,7 +346,20 @@ li a:active {
     margin-right: 50px;
     margin-bottom: 50px;
   }
+  .giant-bold  {
+    font-size: 4rem;
+    text-align: left;
+  }
   li a:hover {
     background-color: #555555;
   }
+  .starship-container img {
+    width: 250px;
+    height: auto;
+  }
+  .starship-container p {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  
 }
