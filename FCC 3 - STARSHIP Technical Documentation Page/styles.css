@@ -1,0 +1,312 @@
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+* {
+  font-family: D-DIN-BOLD, Poppins, Arial;       
+}
+
+.nav-bar {
+  position: fixed;
+}
+
+ul {
+  list-style: none;
+}
+
+html, body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #0F0F0F;
+}
+
+.image-container {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.image-container img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  width: auto;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover; 
+}
+
+.header-text {
+  position: absolute;
+  transform: translateX(-48%);
+  top: 5%;
+  left: 50%;
+  z-index: 1000;
+  font-size: 3.2rem;
+  color: #fff;
+  font-weight: bolder;
+  letter-spacing: 0.8rem;
+}
+
+.header-text-description {
+  position: absolute;
+  transform: translateX(-48%);
+  left: 50%;
+  z-index: 1001;
+  color: #AAAAAA;
+  font-size: 1.1rem;
+  white-space: nowrap;
+  top: calc(5% + 3.2rem + 2rem);
+}
+
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #0F0F0F;
+  height: 100vh;
+}
+
+nav img {
+  width: 250px;
+  height: auto;
+  margin: -55px; 
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  align-items: center;
+  white-space: nowrap;
+}
+
+li a {
+  padding: 10px 20px;
+  background-color: #1E1E1E;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px 0 20px 0;
+  border: 3px solid #565656;
+}
+
+li a:before,
+li a:after {
+  content: '';
+  position: absolute;
+  background-color: #0F0F0F; 
+  z-index: 2000;
+}
+
+li a:before {
+  top: -5px;
+  left: -5px;
+  width: 25px;
+  height: 25px;
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+li a:after {
+  bottom: -5px;
+  right: -5px;
+  width: 25px;
+  height: 25px;
+  clip-path: polygon(100% 100%, 0 100%, 100% 0);
+}
+
+
+li a:active {
+  border: 3px solid #0F0F0F;
+}
+
+.main-section {
+  height: 100vh;
+  width: 100%;
+}
+
+#mission {
+  background-color: #141414;
+  height: auto;
+}
+
+.mission-container {
+  width: 70vw;
+  max-width: 900px;
+  min-width: 200px;
+  margin: 0 auto;
+  color: #fff;
+  padding-bottom: 10px;
+  padding: 1%;
+}
+
+.content-wrapper {
+  margin: 5% 0;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.mission-container ul {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 2.5rem;
+  margin-right: 0px;
+  margin-bottom: 30px;
+}
+
+.mission-container li {
+  color: #919191;
+}
+
+.text-container {
+  max-width: 500px;
+}
+.mission-container p {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+
+.mission-container h2 {
+  font-size: 4rem;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.big {
+  font-size: 1.4rem;
+}
+.capabilities h3 {
+  font-weight: bolder;
+  font-size: 2.5rem;
+  text-align: center;
+}
+.capabilities p {
+  color:#919191;
+}
+.capabilities p span {
+  color:white;
+}
+@media (min-width: 1400px) {
+  .header-text {
+      top: unset;
+      top: 1%;
+      font-size: 5rem;
+      letter-spacing: 1.2rem;
+  }
+  .header-text-description {
+      font-size: 1.7rem;
+      top: calc(1% + 5rem + 3rem);
+  }
+  nav img {
+    width: 370px;
+    height: auto;
+    margin-right: 20px;
+    margin-left: -100px;
+  }
+  li a {
+    padding: 15px 30px;
+    font-size: 1.95em;
+  }
+  
+  li a:before {
+    top: -5px;
+    left: -5px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  li a:after {
+    bottom: -5px;
+    right: -5px;
+    width: 40px;
+    height: 40px;
+
+  }
+  ul {
+    gap: 90px;
+  }
+  .mission-container ul {
+    font-size: 4rem;
+    margin-right: 50px;
+  }
+  .mission-container p {
+    font-size: 1.4rem;
+  }
+  li a:hover {
+  background-color: #555555;
+}
+}
+
+@media (max-width: 1400px) and (min-width: 600px) {
+  .header-text {
+      top: unset;
+      top: 1%;
+      font-size: 4rem;
+      letter-spacing: 1.2rem;
+  }
+  .header-text-description {
+      font-size: 1.37rem;
+      top: calc(1% + 4rem + 3rem);
+  }
+  nav img {
+    width: 330px;
+    height: auto;
+    margin: -50px;
+  }
+  li a {
+    padding: 15px 30px;
+    font-size: 1.95em;
+  }
+  
+  li a:before {
+    top: -5px;
+    left: -5px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  li a:after {
+    bottom: -5px;
+    right: -5px;
+    width: 40px;
+    height: 40px;
+
+  }
+  .mission-container ul {
+    font-size: 2.5rem;
+    margin-right: 50px;
+    margin-bottom: 50px;
+  }
+  li a:hover {
+    background-color: #555555;
+  }
+}
