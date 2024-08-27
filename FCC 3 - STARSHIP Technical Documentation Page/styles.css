@@ -75,7 +75,7 @@ nav {
   align-items: center;
   width: 100%;
   background-color: #0F0F0F;
-  height: 100vh;
+  height: 980px;
 }
 
 nav img {
@@ -259,6 +259,30 @@ li a:active {
   justify-content: center;
   flex-wrap: wrap;
 }
+
+.starship-text-wrapper {
+  min-width: 300px;
+}
+
+table {
+  margin: 0 auto;
+  max-width: 400px;
+  min-width: 200px;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+tr {
+  border-bottom: 3px solid grey;
+}
+th {
+  text-align: left;
+  padding: 7.5px 0;
+}
+td {
+  text-align: right;
+  padding: 7.5px 0;
+}
+
 @media (min-width: 1400px) {
   .header-text {
       top: unset;
@@ -324,6 +348,11 @@ li a:active {
   .starship-content-wrapper {
     flex-wrap: nowrap;
   }
+  table {
+    max-width: 750px;
+    width: 100%;
+    font-size: 1.4rem;
+  }
 }
 
 @media (max-width: 1400px) and (min-width: 600px) {
@@ -384,5 +413,10 @@ li a:active {
   }
   .starship-content-wrapper {
     flex-wrap: nowrap;
+  }
+  table {
+    max-width: 700px;
+    width: 100%;
+    font-size: 1.2rem;
   }
 }
