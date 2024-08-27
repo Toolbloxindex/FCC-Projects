@@ -158,6 +158,7 @@ li a:active {
 #mission {
   background-color: #141414;
   height: auto;
+  width: 100%;
   padding: 50px 0;
 }
 
@@ -226,6 +227,8 @@ li a:active {
   background-color:#0F0F0F;
   height: auto; 
   width: 100%;
+  padding-top: 50px;
+  padding-bottom: 80px;
 }
 .starship-container {
   width: 70vw;
@@ -283,6 +286,47 @@ td {
   padding: 7.5px 0;
 }
 
+/*SUPER HEAVY*/
+
+#super-heavy {
+  width: 100%;
+  height: auto;
+  background-color:#141414;
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+.super-heavy-container {
+  width: 70vw;
+  max-width: 900px;
+  min-width: 200px;
+  margin: 0 auto;
+  color: #fff;
+  padding-bottom: 10px;
+  padding: 1%;
+}
+
+.super-heavy-content-wrapper {
+  margin: 5% 0;
+  display: flex; 
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.super-heavy-text-wrapper {
+  min-width:200px;
+}
+
+.super-heavy-container p {
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+
+.super-heavy-container img {
+  width: 150px;
+  height: auto;
+}
 @media (min-width: 1400px) {
   .header-text {
       top: unset;
@@ -353,6 +397,17 @@ td {
     width: 100%;
     font-size: 1.4rem;
   }
+  .super-heavy-container img {
+    width: 190px;
+    height: auto;
+  }
+  .super-heavy-content-wrapper {
+    flex-wrap: nowrap;
+  }
+  .super-heavy-container p {
+    margin-left: 100px;
+    font-size: 1.5rem;
+  }
 }
 
 @media (max-width: 1400px) and (min-width: 600px) {
@@ -417,6 +472,17 @@ td {
   table {
     max-width: 700px;
     width: 100%;
+    font-size: 1.2rem;
+  }
+  .super-heavy-container img {
+    width: 180px;
+    height: auto;
+  }
+  .super-heavy-content-wrapper {
+    flex-wrap: nowrap;
+  }
+  .super-heavy-container p {
+    margin-left: 40px;
     font-size: 1.2rem;
   }
 }
