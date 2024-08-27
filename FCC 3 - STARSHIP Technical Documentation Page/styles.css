@@ -327,6 +327,49 @@ td {
   width: 150px;
   height: auto;
 }
+
+/* ENGINES */
+
+#engines {
+  width: 100%;
+  height: auto;
+  background-color:#0F0F0F;
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+
+.engines-container {
+  width: 70vw;
+  max-width: 900px;
+  min-width: 200px;
+  margin: 0 auto;
+  color: #fff;
+  padding-bottom: 10px;
+  padding: 1%;
+}
+
+.engines-content-wrapper {
+  margin: 5% 0;
+  display: flex; 
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.engines-text-wrapper {
+  min-width: 250px;
+}
+
+.engines-container {
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.engines-container img {
+  width: 250px;
+  height: auto;
+}
 @media (min-width: 1400px) {
   .header-text {
       top: unset;
@@ -371,7 +414,7 @@ td {
     margin-right: 50px;
   }
   .mission-container p {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
   .giant-bold {
     font-size: 5rem;
@@ -387,7 +430,7 @@ td {
   .starship-container p {
     margin-left: 100px;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .starship-content-wrapper {
     flex-wrap: nowrap;
@@ -406,7 +449,18 @@ td {
   }
   .super-heavy-container p {
     margin-left: 100px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+  }
+  .engines-content-wrapper {
+    flex-wrap: nowrap;
+  }
+  .engines-container img {
+    width: 320px;
+    height: auto;
+  }
+  .engines-contaner p {
+    margin-left: 100px;
+    font-size: 1.3rem;
   }
 }
 
@@ -482,6 +536,17 @@ td {
     flex-wrap: nowrap;
   }
   .super-heavy-container p {
+    margin-left: 40px;
+    font-size: 1.2rem;
+  }
+  .engines-content-wrapper {
+    flex-wrap: nowrap;
+  }
+  .engines-container img {
+    width: 280px;
+    height: auto;
+  }
+  .engines-contaner p {
     margin-left: 40px;
     font-size: 1.2rem;
   }
