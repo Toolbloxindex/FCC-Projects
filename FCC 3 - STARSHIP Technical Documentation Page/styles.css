@@ -53,7 +53,7 @@ html, body {
   font-size: 3.2rem;
   color: #fff;
   font-weight: bolder;
-  letter-spacing: 0.8rem;
+  letter-spacing: 0.6rem;
 }
 
 .header-text-description {
@@ -231,7 +231,7 @@ li a:active {
   padding-bottom: 80px;
 }
 .starship-container {
-  width: 70vw;
+  width: 80vw;
   max-width: 900px;
   min-width: 200px;
   margin: 0 auto;
@@ -248,10 +248,6 @@ li a:active {
 .starship-container p {
   text-align: center;
   font-size: 1.1rem;
-}
-
-.starship-container h3 {
-  color: #ffffff; 
 }
 
 .starship-content-wrapper {
