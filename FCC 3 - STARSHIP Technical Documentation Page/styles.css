@@ -251,6 +251,14 @@ li a:active {
   color: #ffffff; 
 }
 
+.starship-content-wrapper {
+  margin: 5% 0;
+  display: flex; 
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 @media (min-width: 1400px) {
   .header-text {
       top: unset;
@@ -308,6 +316,14 @@ li a:active {
     width: 300px;
     height: auto;
   }
+  .starship-container p {
+    margin-left: 100px;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .starship-content-wrapper {
+    flex-wrap: nowrap;
+  }
 }
 
 @media (max-width: 1400px) and (min-width: 600px) {
@@ -362,8 +378,11 @@ li a:active {
     height: auto;
   }
   .starship-container p {
+    margin-left: 40px;
     text-align: center;
     font-size: 1.2rem;
   }
-  
+  .starship-content-wrapper {
+    flex-wrap: nowrap;
+  }
 }
