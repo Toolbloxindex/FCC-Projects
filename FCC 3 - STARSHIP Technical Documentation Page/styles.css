@@ -142,7 +142,11 @@ li a:active {
   width: 100%;
 }
 /* universal stuff*/
-
+.bigger-bold {
+  font-weight: bolder;
+  font-size: 2.5rem;
+  text-align: center;
+}
 .giant-bold {
   font-size: 4rem;
   font-weight: bolder;
@@ -207,11 +211,7 @@ li a:active {
 .big {
   font-size: 1.4rem;
 }
-.capabilities h3 {
-  font-weight: bolder;
-  font-size: 2.5rem;
-  text-align: center;
-}
+
 .capabilities p {
   color:#919191;
 }
@@ -245,6 +245,10 @@ li a:active {
 .starship-container p {
   text-align: center;
   font-size: 1.1rem;
+}
+
+.starship-container h3 {
+  color: #ffffff; 
 }
 
 @media (min-width: 1400px) {
