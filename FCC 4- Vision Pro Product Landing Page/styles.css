@@ -1,0 +1,28 @@
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  }
+
+@font-face {
+    font-family: San Francisco;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+* {
+    font-family: San Francisco, poppins, Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.small-header{
+    font-family: San-Francisco, sans-serif;
+    color: #B7B7B7;
+}
+.header {
+    font-family: poppins, sans-serif;
+    font-weight: bolder;
+    color: white;
+}
