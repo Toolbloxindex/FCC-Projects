@@ -430,7 +430,7 @@ footer p {
   text-align: center;
   font-size: 0.9rem;
 }
-@media (min-width: 1400px) {
+@media only screen and (min-width: 1400px) {
   .header-text {
       top: unset;
       top: 1%;
@@ -519,7 +519,7 @@ footer p {
     width: 320px;
     height: auto;
   }
-  .engines-contaner p {
+  .engines-container p {
     margin-left: 100px;
     font-size: 1.3rem;
   }
@@ -537,7 +537,7 @@ footer p {
   }
 }
 
-@media (max-width: 1400px) and (min-width: 600px) {
+@media only screen and (max-width: 1400px) and (min-width: 600px) {
   .header-text {
       top: unset;
       top: 1%;
