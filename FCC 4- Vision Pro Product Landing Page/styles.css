@@ -52,7 +52,7 @@ body {
     position: fixed;
     top:0;
     background-color: #515151;
-    opacity: 0.8;
+    opacity: 0.7;
     height: 50px;
 }
 
@@ -85,6 +85,7 @@ nav ul li a {
     font-family: sans-serif;
     font-weight: light;
     font-size: 1.1rem;
+    letter-spacing: 1px;
     /*border: 2px solid #ffffff;
     padding:2px 10px;
     border-radius: 9px; */
