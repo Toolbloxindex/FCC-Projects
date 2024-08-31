@@ -141,7 +141,7 @@ nav a {
     color: #B7B7B7;
     font-size: 5rem;
     position: absolute;
-    top: 70px;
+    top: 80px;
     left: 50%;
     transform: translatex(-50%);
     white-space: nowrap;
@@ -152,7 +152,7 @@ nav a {
     font-weight: bolder;
     color: white;
     font-size: 10rem;
-    top: 185px;
+    top: 235px;
     position: absolute;
     white-space: nowrap;
     text-align: left;
@@ -166,7 +166,7 @@ nav a {
     width: 1000px;
     height: auto;
     position: absolute;
-    top: 350px;
+    top: 400px;
     left: 50%;
-    transform: translatex(-25%);
+    transform: translatex(-24%);
 }
