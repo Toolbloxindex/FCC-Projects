@@ -151,19 +151,19 @@ nav a {
     font-family: poppins, sans-serif;
     font-weight: bolder;
     color: white;
-    font-size: 10rem;
-    top: 235px;
+    font-size: 13rem; /*old 10*/ /*new 43.3%, 10.24*/
+    top: 150px; /*<<old 235px*/ 
     position: absolute;
     white-space: nowrap;
     text-align: left;
-    left: 52%;
-    transform: translatex(-100%);
+    left: 50%;
+    transform: translatex(-95%);
     z-index: -1;
 }
 
 .vision-pro-introduction {
     object-fit: cover;
-    width: 1000px;
+    width: 1100px; /*old 1000px*/ /*new 52%*/
     height: auto;
     position: absolute;
     top: 400px;
