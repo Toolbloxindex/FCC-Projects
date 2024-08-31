@@ -4,13 +4,12 @@
     }
   }
 
-@font-face {
-    font-family: San Francisco;
-    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
-}
 
 * {
     font-family: San Francisco, poppins, Arial, Helvetica, sans-serif;
+}
+html, body {
+    overflow-x: hidden;
 }
 
 body {
@@ -54,6 +53,7 @@ body {
     background-color: #515151;
     opacity: 0.6;
     height: 50px;
+    z-index: 1000;
 }
 
 .text-container {
@@ -66,7 +66,7 @@ body {
     height: 50px;
     left: 50%;
     transform: translateX(-50%);
-    
+    z-index: 1001;
 }
 
 .flex-box {
@@ -102,28 +102,34 @@ nav a {
     letter-spacing: 1.2px;
 }
 
-.buy {
-    border: 3px solid #51B3FF;
-    background-color: #51B3FF;
-    color: unset;
-    color: #ffffff;
-    padding:3px 6px 4px 8px;
-    border-radius: 20px;
-}
 
-.text-container p {
-    color: #E5E5E5;
+
+.text-container a {
     font-family: Helvetica, sans-serif;
     font-weight: bold;
     font-size: 1.1rem;
     letter-spacing: 1.5px;
     white-space: nowrap;
+    text-decoration: none;
 }
+
+.text-container a:not(.buy) {
+    color: #E5E5E5;
+}
+
+.buy {
+    border: 3px solid #51B3FF;
+    background-color: #51B3FF;
+    color: #ffffff;
+    padding:3px 6px 4px 8px;
+    border-radius: 20px;
+}
+
 .text-container img {
     width:18px;
     height: 21.37px;
     position: relative;
-    top: -2.2px;
+    top: -2.5px;
     left: -6px;
 }
 
@@ -136,37 +142,161 @@ nav a {
 }
 
 /*INTRODUCTION*/
+
+#introduction {
+    width: 100%;
+}
+
+.container-vision-pro {
+    height: 1050px;
+    width: 100%;
+    background-color: #000000;
+}
+
 .small-header{
     font-family: San-Francisco, sans-serif;
     color: #B7B7B7;
-    font-size: 5rem;
+    font-size: 5.5rem;
     position: absolute;
-    top: 80px;
+    top: 50px;
     left: 50%;
     transform: translatex(-50%);
     white-space: nowrap;
+    z-index: 3;
+    max-width: 1000px;
 
 }
 .header {
     font-family: poppins, sans-serif;
     font-weight: bolder;
     color: white;
-    font-size: 13rem; /*old 10*/ /*new 43.3%, 10.24*/
-    top: 150px; /*<<old 235px*/ 
+    font-size: 12rem;
+    top: 130px;
     position: absolute;
     white-space: nowrap;
     text-align: left;
     left: 50%;
-    transform: translatex(-95%);
-    z-index: -1;
+    transform: translatex(-90%);
+    z-index: 1;
 }
 
 .vision-pro-introduction {
     object-fit: cover;
-    width: 1100px; /*old 1000px*/ /*new 52%*/
+    width: 1000px;
     height: auto;
     position: absolute;
-    top: 400px;
+    top: 450px;
     left: 50%;
     transform: translatex(-24%);
+    z-index: 2;
+    max-width: 1200px;
+}
+
+
+/*device*/
+
+#device {
+    width: 100%;
+    height: 1000px;
+}
+
+
+/*media*/
+
+@media only screen and (max-width: 1400px) and (min-width: 850px) {
+    .small-header {
+        font-size: 4rem;
+    }
+
+    .header {
+        font-size: 8rem;
+    }
+    .vision-pro-introduction{
+        top: 330px;
+        left: calc(50% + 10px);
+        width: 750px;
+    }
+    .container-vision-pro {
+        height: 800px;
+    }
+    
+}
+
+@media only screen and (max-width: 850px) {
+
+    /*NAV BAR MOBILE*/
+    nav ul li a:not(.buy) {
+        display: none;
+    }
+
+    nav ul, nav li{
+        padding: 0;
+    }
+    nav ul li a.buy {
+        text-align: center; 
+    }
+
+    .text-container {
+        top: 6px;
+        position: relative;
+
+    }
+    .text-container a {
+        text-align: center;
+        margin:0;
+        font-size: 1.4rem
+    }
+    .text-container img {
+        width: 18px;
+        height: auto;
+        position: relative;
+        left: 4px;
+        margin-right: 10px; 
+    }
+
+    .nav-container {
+        height: 70px;
+        position: absolute;
+    }
+    .flex-box {
+        position: relative;
+        justify-content: space-between;
+        max-width: 270px;
+        left: 50%;
+        transform: translateX(-55%);
+
+    }
+    nav {
+        width: 30px;
+        min-width: unset;
+    }
+    nav ul {
+        width: 30px;
+    }
+
+    /* VISION PRO MOBILE*/
+    .vision-pro-container{
+        justify-content: center;
+    }
+    .small-header {
+        font-size: 3rem;
+        top: 70px;
+    }
+    .header br {
+        display: none;
+    }
+    .header {
+        font-size: 3.6rem;
+        text-align: center;
+        transform: translatex(-50%);
+    }
+    .vision-pro-introduction{
+        position: relative;
+        top: 300px;
+        transform: translatex(-40%);
+        width: 500px;
+    }
+    .container-vision-pro {
+        height: 800px;
+    }
 }
