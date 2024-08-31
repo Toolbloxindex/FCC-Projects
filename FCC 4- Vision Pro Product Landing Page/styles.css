@@ -44,10 +44,6 @@ body {
     color: #ffffff;
 }
 
-section { 
-    height: 100vh;
-    width:100%; 
-}*
 /*HEADER NAV*/
 .nav-container {
     width: 100%;
@@ -111,7 +107,7 @@ nav a {
     background-color: #51B3FF;
     color: unset;
     color: #ffffff;
-    padding:4px 6px 4px 8px;
+    padding:3px 6px 4px 8px;
     border-radius: 20px;
 }
 
@@ -143,9 +139,34 @@ nav a {
 .small-header{
     font-family: San-Francisco, sans-serif;
     color: #B7B7B7;
+    font-size: 5rem;
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translatex(-50%);
+    white-space: nowrap;
+
 }
 .header {
     font-family: poppins, sans-serif;
     font-weight: bolder;
     color: white;
+    font-size: 10rem;
+    top: 185px;
+    position: absolute;
+    white-space: nowrap;
+    text-align: left;
+    left: 52%;
+    transform: translatex(-100%);
+    z-index: -1;
+}
+
+.vision-pro-introduction {
+    object-fit: cover;
+    width: 1000px;
+    height: auto;
+    position: absolute;
+    top: 350px;
+    left: 50%;
+    transform: translatex(-25%);
 }
