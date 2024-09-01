@@ -102,8 +102,6 @@ nav a {
     letter-spacing: 1.2px;
 }
 
-
-
 .text-container a {
     font-family: Helvetica, sans-serif;
     font-weight: bold;
@@ -113,9 +111,18 @@ nav a {
     text-decoration: none;
 }
 
-.text-container a:not(.buy) {
-    color: #E5E5E5;
+.text-container nav a:not(.buy) {
+    color: #A8A8A8;
 }
+
+nav li a:not(.buy):hover {
+    color: #DBDBDB;
+}
+
+nav li a:not(.buy):active {
+    color: #ffffff
+}
+
 
 .buy {
     border: 3px solid #51B3FF;
@@ -139,6 +146,10 @@ nav a {
     align-items: center;
     justify-content: flex-end;
     width: 200px;
+}
+
+.vision-pro-container a {
+    color: #E5E5E5
 }
 
 /*INTRODUCTION*/
