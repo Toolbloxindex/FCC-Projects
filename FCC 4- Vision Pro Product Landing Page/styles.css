@@ -50,8 +50,8 @@ body {
     padding: 0;
     position: fixed;
     top:0;
-    background-color: #515151;
-    opacity: 0.6;
+    background-color: #313131;
+    opacity: 0.75;
     height: 50px;
     z-index: 1000;
 }
@@ -238,7 +238,7 @@ nav a {
 
     .text-container {
         top: 6px;
-        position: relative;
+        /*position: relative; makes it still*/
 
     }
     .text-container a {
@@ -256,7 +256,7 @@ nav a {
 
     .nav-container {
         height: 70px;
-        position: absolute;
+        /*position: absolute; makes it still*/
     }
     .flex-box {
         position: relative;
