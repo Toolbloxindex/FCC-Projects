@@ -20,12 +20,12 @@ body {
 }
 /*UNIVERSAL STUFF*/
 .normal {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     color: #B7B7B7;
 }
 
 .big {
-    font-size: 3.5rem;
+    font-size: 4rem;
     color: #ffffff;
 }
 
@@ -211,6 +211,25 @@ nav li a:not(.buy):active {
     height: 1000px;
 }
 
+#device h2 {
+    text-align: center;
+    margin:0;
+}
+
+.gif {
+    position: relative;
+    top: 13px;
+    left: 10px;
+}
+
+#device p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    top: 20px;
+    line-height: 33px;
+}
 
 /*media*/
 
@@ -309,5 +328,26 @@ nav li a:not(.buy):active {
     }
     .container-vision-pro {
         height: 800px;
+    }
+
+    /*DEVICE*/
+    #device h2 {
+        font-size: 2.6rem;
+        margin: 0 30px;
+    }
+
+    .gif {
+        width: 60px;
+        top: 10px;
+    }
+
+    #device p {
+        max-width: 550px;
+        width: 80vw;
+        font-size: 1.3rem;
+        margin: 0 auto;
+        padding: 0 20px;
+        top: 60px;
+        
     }
 }
