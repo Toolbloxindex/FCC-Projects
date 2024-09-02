@@ -213,7 +213,6 @@ nav li a:not(.buy):active {
 
 #device h2 {
     text-align: center;
-    margin:0;
 }
 
 .gif {
@@ -232,9 +231,11 @@ nav li a:not(.buy):active {
 }
 
 .h2-2 {
-
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 900px;
+    position: relative;
+    font-size: 3.3rem;
+    top: 150px
 }
 
 /*media*/
@@ -255,9 +256,8 @@ nav li a:not(.buy):active {
     .container-vision-pro {
         height: 800px;
     }
-    #device h2 {
+    .h2-1 {
         font-size: 3.5rem;
-        margin: 0 30px;
     }
 
     .gif {
@@ -273,6 +273,12 @@ nav li a:not(.buy):active {
         line-height: 40px;
         top: 60px;
         
+    }
+
+    .h2-2 {
+        top: 140px;
+        max-width: 700px;
+        font-size: 2.5rem;
     }
 }
 
@@ -355,7 +361,7 @@ nav li a:not(.buy):active {
     }
 
     /*DEVICE*/
-    #device h2 {
+    .h2-1 {
         font-size: 2.6rem;
         margin: 0 30px;
     }
@@ -373,5 +379,10 @@ nav li a:not(.buy):active {
         padding: 0 20px;
         top: 60px;
         
+    }
+    .h2-2 {
+        top: 140px;
+        font-size: 2rem;
+        margin: 0 30px;
     }
 }
