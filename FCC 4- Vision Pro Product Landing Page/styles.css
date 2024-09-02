@@ -22,6 +22,12 @@ body {
 .normal {
     font-size: 1.4rem;
     color: #B7B7B7;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    top: 80px;
+    line-height: 33px;
 }
 
 .big {
@@ -40,7 +46,8 @@ body {
     max-width: 900px;
     position: relative;
     font-size: 3.3rem;
-    top: 150px
+    top: 150px;
+    text-align: center;
 }
 
 
@@ -234,14 +241,6 @@ nav li a:not(.buy):active {
     left: 10px;
 }
 
-#device p {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-    position: relative;
-    top: 20px;
-    line-height: 33px;
-}
 
 /*media*/
 
@@ -270,7 +269,7 @@ nav li a:not(.buy):active {
         top: 7px;
     }
 
-    #device p {
+    .normal {
         max-width: 600px;
         width: 80vw;
         font-size: 1.5rem;
@@ -376,7 +375,7 @@ nav li a:not(.buy):active {
         top: 10px;
     }
 
-    #device p {
+    .normal {
         max-width: 550px;
         width: 80vw;
         font-size: 1.3rem;
