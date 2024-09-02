@@ -27,7 +27,22 @@ body {
 .big {
     font-size: 4rem;
     color: #ffffff;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    top: 20px;
+    line-height: 33px;
 }
+
+.large-big {
+    margin: 0 auto;
+    max-width: 900px;
+    position: relative;
+    font-size: 3.3rem;
+    top: 150px
+}
+
 
 .huge {
     font-size: 2rem;
@@ -211,9 +226,7 @@ nav li a:not(.buy):active {
     height: 1000px;
 }
 
-#device h2 {
-    text-align: center;
-}
+
 
 .gif {
     position: relative;
@@ -228,14 +241,6 @@ nav li a:not(.buy):active {
     position: relative;
     top: 20px;
     line-height: 33px;
-}
-
-.h2-2 {
-    margin: 0 auto;
-    max-width: 900px;
-    position: relative;
-    font-size: 3.3rem;
-    top: 150px
 }
 
 /*media*/
@@ -256,7 +261,7 @@ nav li a:not(.buy):active {
     .container-vision-pro {
         height: 800px;
     }
-    .h2-1 {
+    .big {
         font-size: 3.5rem;
     }
 
@@ -275,7 +280,7 @@ nav li a:not(.buy):active {
         
     }
 
-    .h2-2 {
+    .large-big {
         top: 140px;
         max-width: 700px;
         font-size: 2.5rem;
@@ -361,7 +366,7 @@ nav li a:not(.buy):active {
     }
 
     /*DEVICE*/
-    .h2-1 {
+    .big {
         font-size: 2.6rem;
         margin: 0 30px;
     }
@@ -380,7 +385,7 @@ nav li a:not(.buy):active {
         top: 60px;
         
     }
-    .h2-2 {
+    .large-big {
         top: 140px;
         font-size: 2rem;
         margin: 0 30px;
