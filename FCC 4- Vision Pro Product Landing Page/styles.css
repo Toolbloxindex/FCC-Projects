@@ -528,4 +528,8 @@ nav li a:not(.buy):active {
     .screen-img {
         margin-top: 70px;
     }
+    .photos-h2 {
+        top: -30px;
+    }
+    
 }
