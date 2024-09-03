@@ -280,7 +280,6 @@ nav li a:not(.buy):active {
     top: 280px;
     line-height: 40px;
 }
-/*media*/
 
 .women-img {
     width: 700px;
@@ -321,6 +320,40 @@ nav li a:not(.buy):active {
     z-index: 0;
     position: relative;
     background: linear-gradient(180deg, #000000 40%, #232b1c , #677F70, #ffffff )
+}
+
+.apps-img {
+    top: 270px;
+    object-fit: cover;
+    width: 700px;
+    border-radius: 30px;
+}
+
+.apps-h2 {
+    top: 135px;
+}
+
+.apps-p {
+    top: 300px;
+    max-width: 500px;
+    line-height: 40px;
+}
+
+.flex-container-apps {
+    max-width: 1100px;
+    bottom: 70px;
+    position: relative;
+    left: -50px;
+}
+
+.chips-img {
+    width: 100%;
+    max-height: 1100px;
+    object-fit: cover;
+    object-position: 0 30px;
+    max-width: 1903px;
+    z-index: 0;
+    margin-top: -120px;
 }
 /*PHOTOS*/
 
@@ -405,6 +438,12 @@ nav li a:not(.buy):active {
         width: 1100px;
     }
 
+    .chips-img {
+        width: 100%;
+        max-height: 1100px;
+        object-position: 0 30px;
+    }
+
     .flex-container {
         max-width: 1100px;
     }
@@ -438,6 +477,27 @@ nav li a:not(.buy):active {
     .grid-container {
         max-width: 1000px;
     }
+
+    .apps-p {
+        top:300px;
+        max-width: unset;
+        font-size: 1.3rem;
+    }
+
+    .apps-img {
+        width: 370px;
+        height: 311px;
+        object-position: -80px;
+        margin-right: 20px;
+    }
+
+    .flex-container-apps {
+        max-width: 500px;
+        min-width: 700px;
+        left:-40px;
+    }
+
+
 }
 
 @media only screen and (max-width: 850px) {
@@ -518,6 +578,8 @@ nav li a:not(.buy):active {
         height: 800px;
     }
 
+
+
     /*DEVICE*/
 
     .big {
@@ -553,6 +615,13 @@ nav li a:not(.buy):active {
         width: 100%;
     }
 
+    .apps-img {
+        max-width: 650px;
+        position: relative;
+        left: unset;
+        transform:unset;
+    }
+
     .flex {
         flex-direction: column ;
     }
@@ -564,6 +633,11 @@ nav li a:not(.buy):active {
     }
     .screen-p {
         top: 400px;
+    }
+    
+    .apps-p {
+        top:370px;
+        margin-bottom: 90px;
     }
 
     .screen-h2 {
@@ -579,7 +653,7 @@ nav li a:not(.buy):active {
         object-fit: cover;
         width: 550px;
         top: 150px;
-        object-position: -350px
+        object-position: -350px;
     }
 
     .grid-container {
@@ -587,6 +661,7 @@ nav li a:not(.buy):active {
     }
     .grid {
         grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
     }
 
     .photos-p {
@@ -600,5 +675,8 @@ nav li a:not(.buy):active {
     #photos {
         position: relative;
         top: 340px;
+    }
+    .flex-container-apps {
+        left: unset;
     }
 }
