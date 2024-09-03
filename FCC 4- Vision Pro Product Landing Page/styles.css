@@ -565,6 +565,7 @@ nav li a:not(.buy):active {
     .entertainment-p {
         margin-top: 280px;
         line-height: 40px;
+        max-width: 800px;
     }
 
 }
