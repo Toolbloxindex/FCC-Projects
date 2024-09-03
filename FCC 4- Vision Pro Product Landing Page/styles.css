@@ -72,6 +72,7 @@ body {
 
 .background-img {
     width: 1200px;
+    height: auto;
     object-fit: cover;
     position: relative;
     left: 50%;
@@ -265,7 +266,7 @@ nav li a:not(.buy):active {
 #device {
     width: 100%;
     padding-top: 100px;
-
+    height: auto;
 }
 
 
@@ -358,7 +359,8 @@ nav li a:not(.buy):active {
 /*PHOTOS*/
 
 #photos {
-    height: 3000px;
+    max-height: 1550px;
+    height:auto;
     width: 100%;
     background-color: white;
 }
@@ -370,7 +372,7 @@ nav li a:not(.buy):active {
     width: 1300px;
     height: 550px;
     border-radius: 20px;
-    box-shadow: 0 0 20px 5px #A8A8A8;
+    box-shadow: 0 0 25px 10px #DBDBDB;
     top: 270px;
 }
 
@@ -389,6 +391,45 @@ nav li a:not(.buy):active {
     max-width: 1400px;
     margin: 0 auto;
 }
+
+.deep-h2 {
+    top: 500px;
+    z-index:1;
+}
+
+.underwater {
+    height: 900px;
+    position: relative;
+    top: -500px;
+    opacity: 0.3;
+    width: 100%;
+    filter:blur(40px);
+    z-index:0;
+}
+
+.blue-gradient {
+    min-height: 1000px;
+    height: auto;
+    width:100%;
+    background: linear-gradient(180deg, #ffffff 10%, #015A86, #000A44);
+    position: relative;
+    top: 500px;
+}
+
+/*Entertainemnt*/
+
+#entertainment {
+    min-height: 1500px;
+    height: auto;
+    width: 100%;
+    background: linear-gradient(
+        180deg,
+        #000B45 65%,
+        #000000)
+}
+
+
+
 @media only screen and (max-width: 1400px) and (min-width: 850px) {
 
     .small-header {
@@ -497,7 +538,21 @@ nav li a:not(.buy):active {
         left:-40px;
     }
 
+    .deep-h2 {
+        top: 420px;
+    }
 
+    #photos {
+        height: 1700px;
+    }
+    
+
+    .entertainment-h2 {
+        top: 250px;
+    }
+    .underwater  {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 850px) {
@@ -646,6 +701,8 @@ nav li a:not(.buy):active {
     .screen-img {
         margin-top: 70px;
     }
+
+    /*PHOTOS*/
     .photos-h2 {
         top: 100px;
     }
@@ -672,11 +729,31 @@ nav li a:not(.buy):active {
         top: 340px;
     }
 
-    #photos {
-        position: relative;
-        top: 340px;
-    }
     .flex-container-apps {
         left: unset;
     }
+
+    .deep-h2 {
+        top: 350px;
+    }
+    
+    .entertainment-h2 {
+        margin-top: 700px;
+    }
+    #photos {
+        height: auto;
+        max-height: 4000px;
+    }
+
+    #photos {
+        position: static;
+        margin-top: 340px;
+    }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 850px ) {
+    #photos {
+        height: auto;
+        max-height: 1900px;
+    } 
 }
