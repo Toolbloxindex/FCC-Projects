@@ -428,7 +428,15 @@ nav li a:not(.buy):active {
         #000000)
 }
 
+.entertainment-img {
+    border-radius: 30px;
+    margin-top: -80px;
+}
 
+.entertainment-p {
+    margin-top: 280px;
+    line-height: 40px;
+}
 
 @media only screen and (max-width: 1400px) and (min-width: 850px) {
 
@@ -543,7 +551,7 @@ nav li a:not(.buy):active {
     }
 
     #photos {
-        height: 1700px;
+        max-height: 1700px;
     }
     
 
@@ -553,6 +561,12 @@ nav li a:not(.buy):active {
     .underwater  {
         width: 100%;
     }
+
+    .entertainment-p {
+        margin-top: 280px;
+        line-height: 40px;
+    }
+
 }
 
 @media only screen and (max-width: 850px) {
@@ -742,18 +756,28 @@ nav li a:not(.buy):active {
     }
     #photos {
         height: auto;
-        max-height: 4000px;
+        max-height: 2300px;
     }
 
     #photos {
         position: static;
         margin-top: 340px;
     }
+    .entertainment-p {
+        margin-top: 320px;
+        line-height: 40px;
+    }
+
+    .entertainment-img {
+        height: 400px;
+        border-radius: 0px;
+        margin-top: -140px;
+    }
 }
 
-@media only screen and (min-width: 450px) and (max-width: 850px ) {
+@media only screen and (min-width:464px) and (max-width: 850px ) {
     #photos {
         height: auto;
-        max-height: 1900px;
+        max-height: 2090px;
     } 
 }
