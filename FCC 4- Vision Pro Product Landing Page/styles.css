@@ -472,6 +472,51 @@ footer {
     padding-bottom: 120px;
 }
 
+
+form {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.input-h2 {
+    top: -120px;
+}
+
+input:not([type="submit"]) {
+    width: 40vw;
+    max-width: 500px;
+    height: 30px;
+    border: none;
+    min-width: 200px;
+    border-radius: 6px;
+}
+
+input[type="submit"] {
+    display: block;
+    margin: 30px auto;
+    border: none;
+    width: 20vw;
+    max-width: 150px;
+    min-width: 80px;
+    border-radius: 6px;
+    height:29px;
+    background-color:#313131;
+    color: #ffffff;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #A8A8A8;
+    color: #000000;
+}
+
+
+input[type="submit"]:active {
+    cursor: pointer;
+    background-color: #515151;
+}
+
+
 @media only screen and (max-width: 1400px) and (min-width: 850px) {
 
     .small-header {
@@ -610,6 +655,12 @@ footer {
 
     .work-img {
         margin-top: -150px;
+    }
+
+    .input-h2 {
+    
+        top: -100px;
+    
     }
 
 }
@@ -832,6 +883,10 @@ footer {
 
     .learn-more-video {
         margin-top: -10px;
+    }
+
+    .input-h2 {
+        top: -100px;
     }
 }
 
