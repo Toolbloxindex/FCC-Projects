@@ -240,4 +240,13 @@ header a:active {
     .less-big {
         font-size: 1.1rem;
     }
+    .project-img {
+        object-fit: cover;
+        width: 200px;
+        height: 100px;
+        object-position: auto;
+        border-radius: 10px;
+        box-shadow: 0px 0px 12px 0 #CCCCCC;
+        transition: transform 0.7s ease-in-out, box-shadow 2s ease-in-out;
+    }
 }
