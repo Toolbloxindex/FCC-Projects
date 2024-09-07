@@ -4,7 +4,8 @@
     }
   }
 :root {
-    --grey-text: #727272;
+    --header-text: #727272;
+    --grey-text: #3D3D3D;
     --light-grey: #A0A0A0;
     --p-gray: #8E8E8E;
 }
@@ -90,9 +91,9 @@ header {
     margin-block: 0;
     margin: 0 auto;
     flex-wrap: wrap;
-    width: 100%;
-    max-width: 700px;
-    min-width: 550px;
+    width: 80%;
+    max-width: 900px;
+    min-width: 650px;
 }
 
  header a {
@@ -149,7 +150,7 @@ header a:active {
     margin-top: 100px;
     position: relative;
     z-index: -1;
-    color: var(--grey-text); 
+    color: var(--header-text); 
 }
 
 #about-me li {
@@ -202,6 +203,20 @@ header a:active {
 
 .project-img {
     transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+/*Contact*/
+
+.social-buttons {
+    display: flex;
+    justify-content: space-between;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px 0 80px 0; 
+}
+
+.social-img {
+    border-radius: 4px;
 }
 
 /*Set max-width for the header-text*/
