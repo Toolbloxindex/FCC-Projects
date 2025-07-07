@@ -15,6 +15,14 @@ function convertToRoman(num) {
     "I": 1
   }
     let result = "";
+    for (let key in romanNumerals) {
+      while (num >= romanNumerals[key]) {
+        result += key;
+        num -= romanNumerals[key];
+      }
+    }
+    console.log(result);
+    return result;
 }
 
 convertToRoman(36);
