@@ -5,6 +5,9 @@ function palindrome(str) {
     if (cleanedStr === reversedStr) {
         return true
     }
+    else {
+        return false
+    }
 }
 
 console.log(palindrome("eye"));
